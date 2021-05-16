@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="BSP Parser">
+      <UniqueIdentifier>{28f981c4-6a68-43f4-be97-5bca12514c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{df820480-2791-4434-9986-6a323935a8d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\valve-bsp-parser-master\src\bsp_parser.cpp">
+      <Filter>BSP Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Radar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Glow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinChanger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DontLookAtMe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\valve-bsp-parser-master\include\valve-bsp-parser\bsp_parser.hpp">
+      <Filter>BSP Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\valve-bsp-parser-master\include\valve-bsp-parser\core\matrix.hpp">
+      <Filter>BSP Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\valve-bsp-parser-master\include\valve-bsp-parser\core\requirements.hpp">
+      <Filter>BSP Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\valve-bsp-parser-master\include\valve-bsp-parser\core\valve_structs.hpp">
+      <Filter>BSP Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\adl_serializer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\byte_container_with_subtype.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\json_fwd.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\ordered_map.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\thirdparty\hedley\hedley.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\thirdparty\hedley\hedley_undef.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\exceptions.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\hash.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\json_pointer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\json_ref.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\macro_scope.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\macro_unscope.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\value_t.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\output\binary_writer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\output\output_adapters.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\output\serializer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\meta\cpp_future.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\meta\detected.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\meta\is_sax.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\meta\type_traits.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\meta\void_t.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\internal_iterator.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\iter_impl.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\iteration_proxy.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\iterator_traits.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\json_reverse_iterator.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\iterators\primitive_iterator.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\binary_reader.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\input_adapters.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\json_sax.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\lexer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\parser.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\input\position_t.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\conversions\from_json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\conversions\to_chars.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\nlohmann\detail\conversions\to_json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\single_include\nlohmann\json.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="DontLookAtMe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Radar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Glow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinChanger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
