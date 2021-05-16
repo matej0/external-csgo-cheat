@@ -33,7 +33,7 @@ extern rn::bsp_parser* g_pBSP;
 #define M_PI 3.14159265359
 #define RAD2DEG( x ) ( ( float )( x ) * ( float )( 180.0f / ( float )( M_PI ) ) )
 constexpr std::string_view directory = "E:\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo";
-
+//ancient mem class from uc. thanks to whoever posted it.
 class CMemory
 {
 private:
