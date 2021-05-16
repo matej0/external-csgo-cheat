@@ -3,7 +3,7 @@ an external cheat for CS:GO. bsp parsing and json offset parsing. you need the m
 all features work as intended.
 
 credits:
-- some guy from uc for memory class
+- some guy from uc - memory class
 - Niels Lohmann - json parsing library
 - ReactiioN - bsp parser 
 
