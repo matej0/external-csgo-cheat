@@ -29,7 +29,7 @@ void C_Glow::Think(int nIndex)
 
 	g_pMemory->Read<int>(dwPlayer + g_pParsedOffsets.m_iGlowIndex, gAPI.iGlowIndex);
 	int GlowObjectManager = g_pMemory->ReadA<int>(gAPI.dwClientModule + g_pParsedOffsets.dwGlowObjectManager);
-	GlowObjectDefinition Glow = g_pMemory->ReadA<GlowObjectDefinition>(GlowObjectManager + (gAPI.iGlowIndex * 0x38));
+	GlowObjectDefinition_t Glow = g_pMemory->ReadA<GlowObjectDefinition_t>(GlowObjectManager + (gAPI.iGlowIndex * sizeof(GlowObjectDefinition_t)));
 
 	Glow.m_flGlowRed = 1.f;
 	Glow.m_flGlowGreen = 1.f;
@@ -38,5 +38,5 @@ void C_Glow::Think(int nIndex)
 	Glow.m_bRenderWhenOccluded = true;
 	Glow.m_bRenderWhenUnoccluded = false;
 
-	g_pMemory->WriteA<GlowObjectDefinition>(GlowObjectManager + (gAPI.iGlowIndex * 0x38), Glow);
+	g_pMemory->WriteA<GlowObjectDefinition_t>(GlowObjectManager + (gAPI.iGlowIndex * sizeof(GlowObjectDefinition_t)), Glow);
 }

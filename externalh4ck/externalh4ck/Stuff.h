@@ -33,7 +33,7 @@ extern rn::bsp_parser* g_pBSP;
 #define M_PI 3.14159265359
 #define RAD2DEG( x ) ( ( float )( x ) * ( float )( 180.0f / ( float )( M_PI ) ) )
 constexpr std::string_view directory = "E:\\Steam\\steamapps\\common\\Counter-Strike Global Offensive\\csgo";
-//ancient mem class from uc. thanks to whoever posted it.
+
 class CMemory
 {
 private:
@@ -421,16 +421,26 @@ static bool WorldToScreen(const D3DXVECTOR3 &origin, D3DXVECTOR3 &screen, int w,
 	return false;
 }
 
-struct GlowObjectDefinition
+
+
+
+struct GlowObjectDefinition_t
 {
-	void*              m_pEntity;				//0000
-	float              m_flGlowRed;				//0004
-	float              m_flGlowGreen;			//0008
-	float              m_flGlowBlue;			//000C
-	float              m_flGlowAlpha;			//0010
-	unsigned char      unk0[0x10];				//0014 - padding stuff like this works but idk
-	bool               m_bRenderWhenOccluded;	//0024
-	bool               m_bRenderWhenUnoccluded;	//0025
-	unsigned char      unk2[0x12];				//0026
-};									
+	int m_nNextFreeSlot;
+	PVOID m_pEntity;
+	float m_flGlowRed;
+	float m_flGlowGreen;			
+	float m_flGlowBlue;			
+	float m_flGlowAlpha;		
+	bool m_bGlowAlphaCappedByRenderAlpha;
+	float m_flGlowAlphaFunctionOfMaxVelocity;
+	float m_flGlowAlphaMax;
+	float m_flGlowPulseOverdrive;
+	bool m_bRenderWhenOccluded;
+	bool m_bRenderWhenUnoccluded;
+	bool m_bFullBloomRender;
+	int m_nFullBloomStencilTestValue;
+	int m_nRenderStyle;
+	int m_nSplitScreenSlot;
+};
 
